@@ -153,7 +153,7 @@ public class RequestServletDemo extends HttpServlet {
     private void demo7(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         System.out.println("demo7被访问了...");
 
-        req.setAttribute("msg", "hello~ Niko");
+        req.setAttribute("msg", "hello");
 
         req.getRequestDispatcher("/request/demo8").forward(req, resp);
     }
